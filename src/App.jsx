@@ -99,7 +99,7 @@ const styles = stylex.create({
     '@media (max-width: 820px)': { display: 'flex', flexDirection: 'column', alignItems: 'stretch', gap: '38px', paddingBlock: '46px 72px' },
   },
   heroCopy: {
-    display: 'flex', flexDirection: 'column', alignItems: 'start', gap: '28px', animationName: heroEntrance, animationDuration: '900ms', animationTimingFunction: 'cubic-bezier(0.22, 1, 0.36, 1)', animationIterationCount: 'infinite',
+    display: 'flex', flexDirection: 'column', alignItems: 'start', gap: '28px', animationName: heroEntrance, animationDuration: '900ms', animationTimingFunction: 'cubic-bezier(0.22, 1, 0.36, 1)', animationIterationCount: 1,
     '@media (max-width: 820px)': { gap: '22px' },
     '@media (prefers-reduced-motion: reduce)': { animationName: 'none' },
   },
@@ -116,7 +116,7 @@ const styles = stylex.create({
   productStage: { position: 'relative', minWidth: 0, height: '610px', display: 'flex', alignItems: 'center', justifyContent: 'center', '@media (max-width: 1100px)': { height: '540px' }, '@media (max-width: 820px)': { width: '100%', height: '480px' } },
   stageRuleV: { position: 'absolute', top: 0, bottom: 0, left: '50%', width: '1px', backgroundColor: '#d9dad5' },
   stageRuleH: { position: 'absolute', top: '50%', left: 0, right: 0, height: '1px', backgroundColor: '#d9dad5' },
-  dashboard: { position: 'relative', zIndex: 1, width: 'min(690px, 100%)', height: '520px', overflow: 'hidden', border: '1px solid #d9dad5', borderRadius: '20px', backgroundColor: '#fff', boxShadow: '0 28px 70px -18px rgba(22,24,29,0.14)', animationName: previewEntrance, animationDuration: '900ms', animationTimingFunction: 'cubic-bezier(0.22, 1, 0.36, 1)', animationIterationCount: 'infinite', '@media (max-width: 1100px)': { height: '470px' }, '@media (max-width: 820px)': { width: 'min(350px, 100%)', height: '430px', borderRadius: '12px', boxShadow: 'none' }, '@media (prefers-reduced-motion: reduce)': { animationName: 'none' } },
+  dashboard: { position: 'relative', zIndex: 1, width: 'min(690px, 100%)', height: '520px', overflow: 'hidden', border: '1px solid #d9dad5', borderRadius: '20px', backgroundColor: '#fff', boxShadow: '0 28px 70px -18px rgba(22,24,29,0.14)', animationName: previewEntrance, animationDuration: '900ms', animationTimingFunction: 'cubic-bezier(0.22, 1, 0.36, 1)', animationIterationCount: 1, '@media (max-width: 1100px)': { height: '470px' }, '@media (max-width: 820px)': { width: 'min(350px, 100%)', height: '430px', borderRadius: '12px', boxShadow: 'none' }, '@media (prefers-reduced-motion: reduce)': { animationName: 'none' } },
   windowBar: { height: '48px', paddingInline: '16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderBottom: '1px solid #e9e9e4', color: '#666a70', fontSize: '10px', '@media (max-width: 820px)': { height: '42px', paddingInline: '12px' } },
   windowControls: { width: '36px', height: '8px' },
   synced: { display: 'flex', alignItems: 'center', gap: '5px', color: '#1f8a5b', fontSize: '9px' },
