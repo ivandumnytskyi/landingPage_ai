@@ -13,11 +13,11 @@ This project is a demonstration of using AI as part of a frontend workflow, not 
 ## Features
 
 - Responsive landing page with product, workflow, benefits, integrations, customer story, pricing, FAQ, and footer sections
-- Mobile navigation menu and interactive FAQ accordion
+- Interactive plan builder connected to the Express backend, mobile navigation menu, and FAQ accordion
 - StyleX styling with shared design styles and local Figma-exported assets
 - Reduced-motion support for entrance animations
 
-This is a frontend portfolio concept. Product actions and account flows are illustrative and are not connected to a backend. Brand marks, customer quotes, and performance figures are sample content, not verified customer claims.
+The plan builder generates a rules-based starter plan through the backend. Plans are not saved. Sign-in, billing, integrations, and other product actions remain illustrative. Brand marks, customer quotes, and performance figures are sample content, not verified customer claims.
 
 ## Tech Stack
 
@@ -32,6 +32,17 @@ This is a frontend portfolio concept. Product actions and account flows are illu
 npm install
 npm run dev
 ```
+
+In another terminal, start the API:
+
+```sh
+cd backend
+npm install
+cp .env.example .env
+npm run dev
+```
+
+The frontend uses `http://localhost:3001` by default. Set `VITE_API_URL` to the API origin when deploying the frontend separately. Set the backend's `FRONTEND_ORIGIN` to the frontend origin so browser requests are allowed. See [backend/README.md](./backend/README.md) for API and Vercel setup.
 
 ## Verify
 
