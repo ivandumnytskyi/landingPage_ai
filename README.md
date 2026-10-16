@@ -1,6 +1,6 @@
 # Flowly
 
-Flowly is a responsive landing-page concept for an AI project-planning product. It was built with React, Vite, and StyleX, based on a Figma design reference.
+Flowly is a responsive landing-page concept for an AI project-planning product. It was built with a React + Vite frontend and an Express backend, based on a Figma design reference.
 
 ## AI-Assisted Development
 
@@ -23,6 +23,7 @@ The plan builder generates a rules-based starter plan through the backend. Plans
 
 - React
 - Vite
+- Express
 - StyleX
 - ESLint
 
